@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<head>
+  <title>NetOfCheats|Login</title>
+  <link rel = "icon" href = "icon.png" type = "image/x-icon">
+  <script type="text/javascript">
+    function checkPassword() {
+      var passcode,message;
+      passcode = document.getElementById("passcode").value;
+
+      if (passcode == "SiN01@sOfZjAr") {
+        window.location.href = 'mainLoI.html';
+        alert("Correct, Press Ok To Continue");
+      }
+      else {
+        alert("Incorrect Passcode");
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="form">
+            <center>
+  <h1>Enter Passcode</h1>
+  <input type="password" id="passcode">
+  <input type="submit" onclick="checkPassword()">
+  <br><p>(the passcode is SiN01@sOfZjAr)</p>
+</center>
+</div>
+</body>
+</html>
